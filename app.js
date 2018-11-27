@@ -2,6 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var session = require("express-session");
+const uri = require("./uri");
 var app = express();
 
 // use sessions for tracking logins
@@ -20,7 +21,7 @@ app.use(function(req, res, next) {
 });
 
 // mongodb connection
-mongoose.connect("mongodb://localhost/mystery");
+mongoose.connect(uri);
 var db = mongoose.connection;
 // mongo error
 db.on("error", console.error.bind(console, "connection error:"));
