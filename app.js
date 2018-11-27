@@ -2,13 +2,13 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var session = require("express-session");
-const { uri } = require("./uri");
+const { uri } = require("./uri"); //going to need to add your own uri for production
 var app = express();
 
 // use sessions for tracking logins
 app.use(
   session({
-    secret: "treehouse loves you",
+    secret: "jesus loves your mom",
     resave: true,
     saveUninitialized: false
   })
