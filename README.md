@@ -16,5 +16,4 @@ module.exports.uri = uri;
 ```
 
 <br />
- Character info is meant to be added via the mongo shell rather than via app. In case you would like to add it to the shell: <br />
-```db.users.updateOne({"name":"<name>"}, {$set: {"characterInfo": "<character info here>"}})```
+ Character info is meant to be added via the mongo shell rather than via app.
