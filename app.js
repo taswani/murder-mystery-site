@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var session = require("express-session");
-const uri = require("./uri");
+const { uri } = require("./uri");
 var app = express();
 
 // use sessions for tracking logins
