@@ -1,9 +1,9 @@
 {
-  "name": "treehouse-express-auth",
+  "name": "murder-mystery-site",
   "version": "1.0.0",
-  "description": "A project for learning how to add authentication to a web application.",
-  "author": "Treehouse Island, Inc.",
-  "private": true,
+  "description": "A project for a murder mystery party.",
+  "author": "Tanuj Aswani",
+  "private": false,
   "scripts": {
     "start": "node ./app"
   },
